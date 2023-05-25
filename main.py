@@ -12,8 +12,6 @@ from llama_index.indices.postprocessor import SimilarityPostprocessor
 from llama_index import download_loader
 from pathlib import Path
 
-os.environ['OPENAI_API_KEY'] = 'YOUR_OPENAI_API_KEY'
-
 PDFReader = download_loader("PDFReader")
 
 loader = PDFReader()
