@@ -18,7 +18,7 @@ PDFReader = download_loader("PDFReader")
 
 loader = PDFReader()
 
-# load gdocs and index them 
+# load pdf and index them 
 documents = loader.load_data(file=Path('./article.pdf'))
 
 # build index
