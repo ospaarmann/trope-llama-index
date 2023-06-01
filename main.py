@@ -24,15 +24,13 @@ index = GPTVectorStoreIndex.from_documents(documents)
 
 # configure retriever
 retriever = VectorIndexRetriever(
-    index=index, 
+    index=index,
     similarity_top_k=2,
 )
 
 # configure response synthesizer
 response_synthesizer = ResponseSynthesizer.from_args(
-    node_postprocessors=[
-        SimilarityPostprocessor(similarity_cutoff=0.7)
-    ]
+    node_postprocessors=[SimilarityPostprocessor(similarity_cutoff=0.7)]
 )
 
 # assemble query engine
