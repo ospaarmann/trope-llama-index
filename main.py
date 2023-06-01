@@ -17,7 +17,7 @@ PDFReader = download_loader("PDFReader")
 loader = PDFReader()
 
 # load pdf
-documents = loader.load_data(file=Path("./papers/philosophy-paper.pdf"))
+documents = loader.load_data(file=Path("./papers/data-science-paper.pdf"))
 
 # build index
 index = GPTVectorStoreIndex.from_documents(documents)
